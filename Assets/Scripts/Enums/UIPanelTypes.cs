@@ -3,7 +3,7 @@
 public enum UIPanelTypes 
 {
    Start,
+   Level,
    Win,
-   Fail,
-   Level
+   Fail
 }

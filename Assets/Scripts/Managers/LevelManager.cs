@@ -1,5 +1,5 @@
-
 using UnityEngine;
+
 
 
 namespace Managers
@@ -104,7 +104,7 @@ namespace Managers
 
         private void OnRestartLevel()
         {
-            levelID++;
+            //levelID++;
             CoreGameSignals.Instance.onClearActiveLevel?.Invoke();
             CoreGameSignals.Instance.onReset?.Invoke();
             CoreGameSignals.Instance.onLevelInitialize?.Invoke(levelID);
