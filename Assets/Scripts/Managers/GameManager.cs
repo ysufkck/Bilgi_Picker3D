@@ -1,5 +1,6 @@
 using UnityEngine;
 using Sirenix.OdinInspector;
+using Enums;
 
 public class GameManager : MonoBehaviour
 {

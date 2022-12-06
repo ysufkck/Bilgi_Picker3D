@@ -1,21 +1,25 @@
-
 using UnityEngine;
 
-public class OnLevelDestroyerCommand : ICommand
+namespace Commands
 {
-    private Transform _levelHolder;
 
-    public OnLevelDestroyerCommand (Transform levelHolder)
-    {
-        _levelHolder = levelHolder;
-    }
 
-    public void Execute()
+    public class OnLevelDestroyerCommand : ICommand
     {
-        Object.Destroy(_levelHolder.GetChild(0).gameObject);
-    }
-    public void Execute(int value)
-    {
+        private readonly Transform _levelHolder;
 
+        public OnLevelDestroyerCommand(Transform levelHolder)
+        {
+            _levelHolder = levelHolder;
+        }
+
+        public void Execute()
+        {
+            Object.Destroy(_levelHolder.GetChild(0).gameObject);
+        }
+        public void Execute(int value)
+        {
+
+        }
     }
 }

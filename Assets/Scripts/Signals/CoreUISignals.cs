@@ -1,5 +1,6 @@
 using Extensions;
 using UnityEngine.Events;
+using Enums;
 
 namespace Signals
 {
