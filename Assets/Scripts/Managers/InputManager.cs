@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Assets.Scripts.Signals;
 using Data.UnityObjects;
 using Data.ValueObjects;
 using Signals;
@@ -6,6 +7,8 @@ using Sirenix.OdinInspector;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using Keys;
+
 
 namespace Managers
 {
@@ -79,17 +82,17 @@ namespace Managers
             {
                 _isTouching = false;
 
-                //InputSignals.Instance.onInputReleased?.Invoke();
+                InputSignals.Instance.onInputReleased?.Invoke();
             }
 
             if (Input.GetMouseButtonDown(0) && !IsPointerOverUIElement())
             {
                 _isTouching = true;
-                //InputSignals.Instance.onInputTaken?.Invoke();
+                InputSignals.Instance.onInputTaken?.Invoke();
                 if (!_isFirstTimeTouchTaken)
                 {
                     _isFirstTimeTouchTaken = true;
-                    //InputSignals.Instance.onFirstTimeTouchTaken?.Invoke();
+                    InputSignals.Instance.onFirstTimeTouchTaken?.Invoke();
                 }
 
                 _mousePosition = Input.mousePosition;
@@ -114,12 +117,12 @@ namespace Managers
 
                         _mousePosition = Input.mousePosition;
 
-                        // InputSignals.Instance.onInputDragged?.Invoke(new HorizontalnputParams()
-                        // {
-                        //     HorizontalInputValue = _moveVector.x,
-                        //     HorizontalInputClampNegativeSide = InputData.Data.HorizontalInputClampNegativeSide,
-                        //     HorizontalInputClampPositiveSide = InputData.Data.HorizontalInputClampPositiveSide
-                        // });
+                         InputSignals.Instance.onInputDragged?.Invoke(new HorizontalnputParams()
+                         {
+                             HorizontalInputValue = _moveVector.x,
+                             HorizontalInputClampNegativeSide = _data.ClampValues.x,
+                             HorizontalInputClampPositiveSide = _data.ClampValues.y
+                         });
                     }
                 }
             }
