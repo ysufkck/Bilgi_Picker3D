@@ -4,16 +4,11 @@ using System.Collections.Generic;
 namespace Data.ValueObjects
 {
     [Serializable]
-    public struct LevelData
+    public class LevelData
     {
-        public List<PoolData> PoolList;
-
-        public LevelData(List<PoolData> datas)
-        {
-            PoolList = datas;
-        }
+        public List<PoolData> PoolList = new List <PoolData>();
+        
     }
-
     [Serializable]
     public struct PoolData
     {

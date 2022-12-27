@@ -8,7 +8,6 @@ namespace Data.ValueObjects
         public MovementData MovementData;
         public ScaleData ScaleData;
     }
-
     [Serializable]
     public struct MovementData
     {
@@ -23,13 +22,12 @@ namespace Data.ValueObjects
             ForwardForceCounter = forwardForceCounter;
         }
     }
-
     [Serializable]
     public struct ScaleData
     {
         public float ScaleCounter;
 
-        public ScaleData(float scaleCounter)
+        public ScaleData (float scaleCounter)
         {
             ScaleCounter = scaleCounter;
         }
