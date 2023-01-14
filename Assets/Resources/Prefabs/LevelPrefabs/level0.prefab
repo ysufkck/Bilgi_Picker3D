@@ -8324,6 +8324,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4260727170193953655}
     m_Modifications:
+    - target: {fileID: 5267794503045612008, guid: e3be53ecc3add674e9f5089d69ee574c, type: 3}
+      propertyPath: InitialModule.startRotationX.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5267794503045612008, guid: e3be53ecc3add674e9f5089d69ee574c, type: 3}
+      propertyPath: InitialModule.startRotationY.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5267794503045648858, guid: e3be53ecc3add674e9f5089d69ee574c, type: 3}
+      propertyPath: InitialModule.startSizeY.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5267794503045648858, guid: e3be53ecc3add674e9f5089d69ee574c, type: 3}
+      propertyPath: InitialModule.startSizeZ.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5267794503045648858, guid: e3be53ecc3add674e9f5089d69ee574c, type: 3}
+      propertyPath: InitialModule.startRotationX.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5267794503045648858, guid: e3be53ecc3add674e9f5089d69ee574c, type: 3}
+      propertyPath: InitialModule.startRotationY.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6504457152326778906, guid: e3be53ecc3add674e9f5089d69ee574c, type: 3}
       propertyPath: m_RootOrder
       value: 0
