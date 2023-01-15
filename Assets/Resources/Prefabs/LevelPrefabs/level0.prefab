@@ -1343,7 +1343,7 @@ GameObject:
   - component: {fileID: 4333549825888135464}
   m_Layer: 0
   m_Name: 140
-  m_TagString: Gem
+  m_TagString: Diamond
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2032,7 +2032,7 @@ GameObject:
   - component: {fileID: 2610288375057746532}
   m_Layer: 0
   m_Name: 160
-  m_TagString: Gem
+  m_TagString: Diamond
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4068,7 +4068,7 @@ GameObject:
   - component: {fileID: 4302937917852693714}
   m_Layer: 0
   m_Name: 60
-  m_TagString: Gem
+  m_TagString: Diamond
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5425,7 +5425,7 @@ GameObject:
   - component: {fileID: 7478456754304076322}
   m_Layer: 0
   m_Name: 30
-  m_TagString: Gem
+  m_TagString: Diamond
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6647,7 +6647,7 @@ GameObject:
   - component: {fileID: 3710059445798611659}
   m_Layer: 0
   m_Name: 100
-  m_TagString: Gem
+  m_TagString: Diamond
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7026,7 +7026,7 @@ GameObject:
   - component: {fileID: 7069403778115375186}
   m_Layer: 0
   m_Name: 35
-  m_TagString: Gem
+  m_TagString: Diamond
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10606,7 +10606,7 @@ GameObject:
   - component: {fileID: 1392019408590875105}
   m_Layer: 0
   m_Name: 180
-  m_TagString: Gem
+  m_TagString: Diamond
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11457,7 +11457,7 @@ GameObject:
   - component: {fileID: 2914795554500393752}
   m_Layer: 0
   m_Name: 40
-  m_TagString: Gem
+  m_TagString: Diamond
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13208,7 +13208,7 @@ GameObject:
   - component: {fileID: 5097299418720715819}
   m_Layer: 0
   m_Name: 240
-  m_TagString: Gem
+  m_TagString: Diamond
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15085,7 +15085,7 @@ GameObject:
   - component: {fileID: 3529445742401381426}
   m_Layer: 0
   m_Name: 0
-  m_TagString: Gem
+  m_TagString: Diamond
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16076,7 +16076,7 @@ GameObject:
   - component: {fileID: 5884994564082689219}
   m_Layer: 0
   m_Name: 20
-  m_TagString: Gem
+  m_TagString: Diamond
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16173,7 +16173,7 @@ GameObject:
   - component: {fileID: 2960231838667474820}
   m_Layer: 0
   m_Name: 25
-  m_TagString: Gem
+  m_TagString: Diamond
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16790,7 +16790,7 @@ GameObject:
   - component: {fileID: 2894484793530668043}
   m_Layer: 0
   m_Name: 50
-  m_TagString: Gem
+  m_TagString: Diamond
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16887,7 +16887,7 @@ GameObject:
   - component: {fileID: 3885251986700044833}
   m_Layer: 0
   m_Name: 80
-  m_TagString: Gem
+  m_TagString: Diamond
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17432,7 +17432,7 @@ GameObject:
   - component: {fileID: 7886225232238445328}
   m_Layer: 0
   m_Name: 120
-  m_TagString: Gem
+  m_TagString: Diamond
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

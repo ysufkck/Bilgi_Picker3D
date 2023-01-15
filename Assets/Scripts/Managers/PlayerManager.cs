@@ -85,7 +85,7 @@ namespace Managers
             CoreGameSignals.Instance.onStageAreaSuccessful += OnStageAreaSuccessful;
             CoreGameSignals.Instance.onReset += OnReset;
             CoreGameSignals.Instance.onMinigameAreaEntered += OnMinigameAreaEntered;
-            CoreGameSignals.Instance.updateGems += UpdateGems;
+            CoreGameSignals.Instance.updateDiamonds += UpdateDiamonds;
         }
 
         private void UnSubscribeEvents()
@@ -101,7 +101,7 @@ namespace Managers
             CoreGameSignals.Instance.onStageAreaSuccessful -= OnStageAreaSuccessful;
             CoreGameSignals.Instance.onReset -= OnReset;
             CoreGameSignals.Instance.onMinigameAreaEntered -= OnMinigameAreaEntered;
-            CoreGameSignals.Instance.updateGems -= UpdateGems;
+            CoreGameSignals.Instance.updateDiamonds -= UpdateDiamonds;
         }
 
         private void OnDisable()
@@ -164,10 +164,10 @@ namespace Managers
             movementController.IsReadyToPlay(false);
         }
 
-        private void UpdateGems()
+        private void UpdateDiamonds()
         {
             movementController.IsReadyToPlay(false);
-            physicsController.UpdateGem();
+            physicsController.UpdateDiamond();
         }
 
         private void OnReset()

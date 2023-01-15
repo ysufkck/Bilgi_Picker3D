@@ -18,9 +18,9 @@ namespace Controllers.Player
         
         #region Public Variables
 
-        public TextMeshPro gemtext;
+        public TextMeshPro diamondtext;
         public List<GameObject> RewardInTrigger;
-        public int gemamount;
+        public int diamondamount;
 
         #endregion
         
@@ -68,19 +68,19 @@ namespace Controllers.Player
                 CoreGameSignals.Instance.onMinigameAreaEntered?.Invoke();
             }
 
-            if (other.CompareTag("Gem"))
+            if (other.CompareTag("Diamond"))
             {
                 RewardInTrigger.Add(other.gameObject);
-                gemamount += int.Parse(other.gameObject.name);
-                Debug.Log("gems:" + gemamount);
+                diamondamount += int.Parse(other.gameObject.name);
+                Debug.Log("diamonds:" + diamondamount);
             }
         }
         private void OnTriggerExit(Collider other)
         {
-            if (other.transform.tag == "Gem")
+            if (other.transform.tag == "Diamond")
             {
                 RewardInTrigger.Remove(other.gameObject);
-                gemamount -= int.Parse(other.gameObject.name);
+                diamondamount -= int.Parse(other.gameObject.name);
 
 
             }
@@ -98,9 +98,9 @@ namespace Controllers.Player
         {
         }
 
-        internal void UpdateGem()
+        internal void UpdateDiamond()
         {
-            UIManager.Instance.RewardText.text = gemamount.ToString();
+            UIManager.Instance.RewardText.text = diamondamount.ToString();
         }
 
     }

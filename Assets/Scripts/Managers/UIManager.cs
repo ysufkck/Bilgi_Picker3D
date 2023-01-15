@@ -63,7 +63,7 @@ namespace Managers
         private void OnLevelSuccessful()
         {
             CoreUISignals.Instance.onOpenPanel?.Invoke(UIPanelTypes.Win, 2);
-            CoreGameSignals.Instance.updateGems?.Invoke();
+            CoreGameSignals.Instance.updateDiamonds?.Invoke();
         }
 
         private void OnLevelFailed()
