@@ -89,7 +89,7 @@ namespace ES3Internal
 #if UNITY_EDITOR
         public void GeneratePrefabReferences()
         {
-//#if UNITY_2018_3_OR_NEWER
+#if UNITY_2018_3_OR_NEWER
            // if (this.gameObject.scene.name != null || UnityEditor.SceneManagement.PrefabStageUtility.GetCurrentPrefabStage() != null)
 #else
             if (this.gameObject.scene.name != null)
@@ -124,7 +124,7 @@ namespace ES3Internal
 
             localRefs = tempLocalRefs;
         }
-//#endif
+#endif
     }
 }
 

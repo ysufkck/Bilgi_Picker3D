@@ -1,11 +1,18 @@
+using System.Security.Cryptography;
 using Commands.Player;
+using Controllers;
 using Controllers.Player;
+using Controllers.UI;
 using Data.UnityObjects;
 using Data.ValueObjects;
+using DG.Tweening;
 using Keys;
 using Signals;
 using Sirenix.OdinInspector;
+using TMPro;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
+
 
 namespace Managers
 {
@@ -77,6 +84,8 @@ namespace Managers
             CoreGameSignals.Instance.onFinishAreaEntered += OnFinishAreaEntered;
             CoreGameSignals.Instance.onStageAreaSuccessful += OnStageAreaSuccessful;
             CoreGameSignals.Instance.onReset += OnReset;
+            CoreGameSignals.Instance.onMinigameAreaEntered += OnMinigameAreaEntered;
+            CoreGameSignals.Instance.updateGems += UpdateGems;
         }
 
         private void UnSubscribeEvents()
@@ -91,6 +100,8 @@ namespace Managers
             CoreGameSignals.Instance.onFinishAreaEntered -= OnFinishAreaEntered;
             CoreGameSignals.Instance.onStageAreaSuccessful -= OnStageAreaSuccessful;
             CoreGameSignals.Instance.onReset -= OnReset;
+            CoreGameSignals.Instance.onMinigameAreaEntered -= OnMinigameAreaEntered;
+            CoreGameSignals.Instance.updateGems -= UpdateGems;
         }
 
         private void OnDisable()
@@ -121,6 +132,7 @@ namespace Managers
         private void OnLevelSuccessful()
         {
             movementController.IsReadyToPlay(false);
+            
         }
 
         private void OnLevelFailed()
@@ -139,12 +151,23 @@ namespace Managers
             movementController.IsReadyToPlay(true);
             meshController.ScaleUpPlayer();
             meshController.ShowUpText();
-            meshController.PlayConfetiParticle();
+            meshController.PlayConfettiParticle();
+        }
+        private void OnMinigameAreaEntered()
+        {
+            meshController.PlayBoostParticle();
+            movementController.SpeedBoost();
         }
 
         private void OnFinishAreaEntered()
         {
             movementController.IsReadyToPlay(false);
+        }
+
+        private void UpdateGems()
+        {
+            movementController.IsReadyToPlay(false);
+            physicsController.UpdateGem();
         }
 
         private void OnReset()
